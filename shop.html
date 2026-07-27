@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | Aura Premium Tech & Lifestyle Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="loader-wrapper"><div class="loader"></div></div>
+    <div class="cursor"></div>
+    <div class="scroll-progress"></div>
+    <header class="header">
+      <div class="container nav-container">
+        <a href="index.html" class="logo"><i class="ri-blaze-fill"></i> Aura</a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="shop.html" class="active">Shop</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-icons">
+          <a href="#" class="nav-icon"><i class="ri-search-line"></i></a>
+          <a href="#" class="nav-icon"><i class="ri-user-line"></i></a>
+          <a href="#" class="nav-icon cart-btn">
+            <i class="ri-shopping-bag-line"></i
+            ><span class="cart-count">0</span>
+          </a>
+          <div class="mobile-menu-btn"><i class="ri-menu-line"></i></div>
+        </div>
+      </div>
+    </header>
+    <div class="mobile-menu">
+      <div class="close-btn close-menu"><i class="ri-close-line"></i></div>
+      <nav class="nav-links mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="cart-overlay"></div>
+    <div class="cart-sidebar">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-cart">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span><span class="total-price">$0.00</span>
+        </div>
+        <button class="btn btn-primary">Checkout</button>
+      </div>
+    </div>
+    <div class="toast-container"></div>
+    <section class="shop-header">
+      <div class="container">
+        <h1 class="shop-title">Shop Collection</h1>
+        <p class="shop-breadcrumb">Home / Shop</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container shop-layout">
+        <aside class="shop-sidebar">
+          <div>
+            <h3 class="sidebar-title">Categories</h3>
+            <ul class="category-list">
+              <li>
+                <label class="filter-label"><input type="checkbox" checked /> All Products</label>
+              </li>
+              <li>
+                <label class="filter-label"><input type="checkbox" /> Audio & Tech</label>
+              </li>
+              <li>
+                <label class="filter-label"><input type="checkbox" /> Wearables</label>
+              </li>
+              <li>
+                <label class="filter-label"><input type="checkbox" /> Footwear</label>
+              </li>
+              <li>
+                <label class="filter-label"><input type="checkbox" /> Accessories</label>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="sidebar-title">Price Range</h3>
+            <input type="range" min="0" max="1000" class="price-slider" />
+            <div class="price-range-text">
+              <span>$0</span><span>$1000+</span>
+            </div>
+          </div>
+        </aside>
+        <div>
+          <div class="shop-toolbar">
+            <p class="results-text">Showing 1-12 of 36 results</p>
+            <select class="sort-select">
+              <option>Default Sorting</option>
+              <option>Sort by Popularity</option>
+              <option>Sort by Newest</option>
+              <option>Sort by Price: Low to High</option>
+              <option>Sort by Price: High to Low</option>
+            </select>
+          </div>
+          <div class="product-grid" id="productGrid"></div>
+          <div class="pagination">
+            <button class="btn page-btn active-page">1</button>
+            <button class="btn page-btn">2</button>
+            <button class="btn page-btn">3</button>
+            <button class="btn page-btn">
+              <i class="ri-arrow-right-s-line"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom">
+          <p>&copy; 2024 Aura E-Commerce. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../js/shop.js"></script>
+  </body>
+</html>

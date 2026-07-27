@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium ANC Headphones | Aura Premium Tech & Lifestyle Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+    </div>
+    <div class="cursor"></div>
+    <div class="scroll-progress"></div>
+    <header class="header">
+      <div class="container nav-container">
+        <a href="index.html" class="logo"><i class="ri-blaze-fill"></i> Aura</a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-icons">
+          <a href="#" class="nav-icon"><i class="ri-search-line"></i>
+          </a>
+          <a href="#" class="nav-icon"><i class="ri-user-line"></i>
+          </a>
+          <a href="#" class="nav-icon cart-btn">
+            <i class="ri-shopping-bag-line"></i>
+            <span class="cart-count">0</span>
+          </a>
+          <div class="mobile-menu-btn"><i class="ri-menu-line"></i></div>
+        </div>
+      </div>
+    </header>
+    <div class="mobile-menu">
+      <div class="close-btn close-menu"><i class="ri-close-line"></i></div>
+      <nav class="nav-links mobile-nav" >
+        <a href="index.html">Home</a><a href="shop.html">Shop</a
+        ><a href="about.html">About</a><a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="cart-overlay"></div>
+    <div class="cart-sidebar">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button
+          class="close-cart">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span><span class="total-price">$0.00</span>
+        </div>
+        <button class="btn btn-primary">Checkout</button>
+      </div>
+    </div>
+    <div class="toast-container"></div>
+    <section class="breadcrumb-section" >
+      <div class="container">
+        <p class="breadcrumb-text" >
+          Home / Shop / Audio / Premium ANC Headphones
+        </p>
+      </div>
+    </section>
+    <section class="section product-section" >
+      <div class="container product-details">
+        <div class="animate-on-scroll">
+          <div class="gallery-main">
+            <img
+              src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80"
+              alt="Headphones"
+              id="main-image"
+            />
+          </div>
+          <div class="gallery-thumbs">
+            <img
+              src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=200&q=80"
+              class="thumb active"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=200&q=80"
+              class="thumb "
+            />
+            <img
+              src="https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?auto=format&fit=crop&w=200&q=80"
+              class="thumb "
+            />
+          </div>
+        </div>
+        <div class="animate-on-scroll">
+          <h1 class="product-heading">
+            Premium ANC Headphones
+          </h1>
+          <div class="rating-row" >
+            <div class="product-rating rating-stars" >
+              <i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+              <i class="ri-star-half-fill"></i>
+            </div>
+            <span class="review-text" >(128 Customer Reviews)</span>
+          </div>
+          <div class="product-price-main">
+            $299.99
+            <span class="old-price" >$349.99</span>          
+          </div>
+          <p class="product-description">
+            Experience pure sound with industry-leading active noise
+            cancellation. These premium headphones deliver crisp highs, dynamic
+            mids, and deep bass for an immersive listening experience.
+          </p>
+          <h4 class="option-title" >Color</h4>
+          <div class="color-options">
+            <button class="color-btn black active">
+            </button>
+            <button class="color-btn White"></button>
+            <button class="color-btn purple" ></button>
+          </div>
+          <div class="purchase-row">
+            <div class="quantity-box" >
+              <button class="qty-btn minus-btn">  -
+              </button>
+              <input class="qty-input" type="number" id="qty" value="1" min="1" />
+              <button class="qty-btn plus-btn" >  +
+              </button>
+            </div>
+            <button
+              class="btn btn-primary add-cart-btn" style="flex: 1">
+                 <i class="ri-shopping-cart-line"></i> Add to Cart
+            </button>
+            <button class="btn btn-outline wishlist-btn" >
+              <i class="ri-heart-line"></i>
+            </button>
+          </div>
+          <div class="product-features" >
+            <ul class="feature-list" >
+              <li>
+                <i class="ri-check-line feature-icon"></i>Free shipping on orders over $50
+              </li>
+              <li>
+                <i class="ri-check-line feature-icon"></i> 30-day return policy
+              </li>
+              <li>
+                <i class="ri-check-line feature-icon"></i> 1-year warranty included
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section related-section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Related Products</h2>
+        <div class="product-grid" id="relatedProducts">
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom">
+          <p>&copy; 2024 Aura E-Commerce. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script  src="../js/script.js"></script>
+    <script src="../js/product.js"></script>
+  </body>
+</html>

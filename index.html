@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aura - Premium Tech & Lifestyle Store</title>
+    <meta
+      name="description"
+      content="Aura is a premium e-commerce website for tech gadgets, accessories, and lifestyle products."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+    </div>
+    <div class="cursor"></div>
+    <div class="scroll-progress"></div>
+    <header class="header">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">
+          <i class="ri-blaze-fill"></i> Aura
+        </a>
+        <nav class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-icons">
+          <a href="#" class="nav-icon">
+            <i class="ri-search-line"></i>
+          </a>
+          <a href="#" class="nav-icon">
+            <i class="ri-user-line"></i>
+          </a>
+          <a href="#" class="nav-icon cart-btn">
+            <i class="ri-shopping-bag-line"></i>
+            <span class="cart-count">0</span>
+          </a>
+          <div class="mobile-menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="mobile-menu">
+      <div class="close-btn close-menu">
+        <i class="ri-close-line"></i>
+      </div>
+      <nav class="nav-links mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay"></div>
+    <div class="cart-sidebar">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-cart">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span class="total-price">$0.00</span>
+        </div>
+        <button class="btn btn-primary">Checkout</button>
+      </div>
+    </div>
+    <div class="toast-container"></div>
+    <section class="hero">
+      <div class="hero-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+      </div>
+      <div class="container hero-container">
+        <div class="hero-content animate-on-scroll">
+          <span class="hero-subtitle">New Collection 2026</span>
+          <h1>
+            Discover Premium
+            <br />
+            <span class="text-gradient">Tech & Lifestyle</span>
+          </h1>
+          <p>
+            Elevate your everyday with our curated selection of premium
+            electronics, minimalist accessories, and modern essentials designed
+            for the future.
+          </p>
+          <div class="hero-buttons">
+            <a href="shop.html" class="btn btn-primary"
+              >Shop Now <i class="ri-arrow-right-line"></i
+            ></a>
+            <a href="#categories" class="btn btn-outline">Explore</a>
+          </div>
+        </div>
+        <div class="hero-image animate-on-scroll">
+          <img
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80"
+            alt="Premium Headphones"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="categories" class="section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Shop by Category</h2>
+        <div class="category-grid">
+          <a class="category-card animate-on-scroll" href="shop.html">
+            <img
+              class="category-image"
+              src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?auto=format&fit=crop&w=600&q=80"
+              alt="Smart Devices Collection"
+            />
+            <div class="category-overlay">
+              <h3 class="category-title">Smart Devices</h3>
+            </div>
+          </a>
+          <a href="shop.html" class="category-card animate-on-scroll">
+            <img
+              class="category-image"
+              src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"
+              alt="Accessories"
+            />
+            <div class="category-overlay">
+              <h3 class="category-title">Accessories</h3>
+            </div>
+          </a>
+          <a href="shop.html" class="category-card animate-on-scroll">
+            <img
+              class="category-image"
+              src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=600&q=80"
+              alt="Lifestyle"
+            />
+            <div class="category-overlay">
+              <h3 class="category-title">Lifestyle</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section best-selling">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Best Sellers</h2>
+        <div class="product-grid">
+          <div class="product-card animate-on-scroll">
+            <span class="badge">New</span>
+            <div class="product-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
+                alt="Sony Headphones"
+              />
+              <div class="product-actions">
+                <button
+                  class="action-btn add-cart-home"
+                  data-id="p1"
+                  data-name="Premium ANC Headphones"
+                  data-price="299.99"
+                  data-img="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
+                >
+                  <i class="ri-shopping-cart-line"></i>
+                </button>
+                <a href="product.html" class="action-btn"
+                  ><i class="ri-eye-line"></i
+                ></a>
+                <button class="action-btn">
+                  <i class="ri-heart-line"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-category">Audio</div>
+            <h3 class="product-title">Premium ANC Headphones</h3>
+            <div class="product-rating">
+              <i class="ri-star-fill"></i><i class="ri-star-fill"></i
+              ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+              ><i class="ri-star-half-fill"></i>
+            </div>
+            <div class="product-price">
+              $299.99 <span class="original-price">$349.99</span>
+            </div>
+          </div>
+
+          <div class="product-card animate-on-scroll">
+            <div class="product-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"
+                alt="Smart Watch"
+              />
+              <div class="product-actions">
+                <button
+                  class="action-btn add-cart-home"
+                  data-id="p2"
+                  data-name="Minimalist Smart Watch"
+                  data-price="199.5"
+                  data-img="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"
+                >
+                  <i class="ri-shopping-cart-line"></i>
+                </button>
+                <a href="product.html" class="action-btn"
+                  ><i class="ri-eye-line"></i
+                ></a>
+                <button class="action-btn">
+                  <i class="ri-heart-line"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-category">Wearables</div>
+            <h3 class="product-title">Minimalist Smart Watch</h3>
+            <div class="product-rating">
+              <i class="ri-star-fill"></i><i class="ri-star-fill"></i
+              ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+              ><i class="ri-star-fill"></i>
+            </div>
+            <div class="product-price">$199.50</div>
+          </div>
+
+          <div class="product-card animate-on-scroll">
+            <span class="badge sale-badge">Sale</span>
+            <div class="product-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"
+                alt="Running Shoes"
+              />
+              <div class="product-actions">
+                <button
+                  class="action-btn add-cart-home"
+                  data-id="p3"
+                  data-name="Nike Air Max Pro"
+                  data-price="129"
+                  data-img="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"
+                >
+                  <i class="ri-shopping-cart-line"></i>
+                </button>
+                <a href="product.html" class="action-btn"
+                  ><i class="ri-eye-line"></i
+                ></a>
+                <button class="action-btn">
+                  <i class="ri-heart-line"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-category">Footwear</div>
+            <h3 class="product-title">Nike Air Max Pro</h3>
+            <div class="product-rating">
+              <i class="ri-star-fill"></i><i class="ri-star-fill"></i
+              ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+              ><i class="ri-star-line"></i>
+            </div>
+            <div class="product-price">
+              $129.00 <span class="original-price">$160.00</span>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card animate-on-scroll">
+            <div class="product-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=600&q=80"
+                alt="Drone"
+              />
+              <div class="product-actions">
+                <button
+                  class="action-btn add-cart-home"
+                  data-id="p4"
+                  data-name="DJI Mini Drone"
+                  data-price="499"
+                  data-img="https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=600&q=80"
+                >
+                  <i class="ri-shopping-cart-line"></i>
+                </button>
+                <a href="product.html" class="action-btn"
+                  ><i class="ri-eye-line"></i
+                ></a>
+                <button class="action-btn">
+                  <i class="ri-heart-line"></i>
+                </button>
+              </div>
+            </div>
+            <div class="product-category">Gadgets</div>
+            <h3 class="product-title">DJI Mini Drone</h3>
+            <div class="product-rating">
+              <i class="ri-star-fill"></i><i class="ri-star-fill"></i
+              ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+              ><i class="ri-star-half-fill"></i>
+            </div>
+            <div class="product-price">$499.00</div>
+          </div>
+        </div>
+        <div class="view-all-products">
+          <a href="shop.html" class="btn btn-outline">View All Products</a>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="newsletter-box animate-on-scroll">
+          <h2 class="newsletter-title">Join Our Newsletter</h2>
+          <p class="newsletter-text">
+            Subscribe to get special offers, free giveaways, and
+            once-in-a-lifetime deals.
+          </p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input
+              class="newsletter-input"
+              type="email"
+              placeholder="Enter your email"
+            />
+            <button type="submit" class="btn btn-primary newsletter-btn">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <a href="index.html" class="logo footer-logo">
+              <i class="ri-blaze-fill"></i> Aura
+            </a>
+            <p class="footer-description">
+              Premium e-commerce platform offering the best minimalist tech and
+              lifestyle products.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <div class="footer-links">
+              <a href="index.html">Home</a>
+              <a href="shop.html">Shop</a>
+              <a href="about.html">About Us</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Customer Service</h3>
+            <div class="footer-links">
+              <a href="#">FAQ</a>
+              <a href="#">Shipping & Returns</a>
+              <a href="#">Track Order</a>
+              <a href="#">Privacy Policy</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Contact Info</h3>
+            <ul class="contact-list">
+              <li class="contact-item">
+                <i class="ri-map-pin-line contact-icon"> </i>
+                123 Innovation Drive, NY
+              </li>
+              <li class="contact-item">
+                <i class="ri-phone-line contact-icon"> </i> +1 (555) 123-4567
+              </li>
+              <li class="contact-item">
+                <i class="ri-mail-line contact-icon"> </i>
+                support@aura.com
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Aura E-Commerce. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
